@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.card {
+    background-color: beige;
+    padding: 1vw;
+
+    &__image {
+        width: 25%;
+    }
+
+    &__title {
+        color: green;
+    }
+
+    &__price {
+        font-weight: bold;
+
+        &::before {
+            content: "$ ";
+        }
+    }
+}

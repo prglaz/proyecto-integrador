@@ -9,6 +9,7 @@ body {
         "header"
         "main"
         "footer";
+        gap: 1vw;
     
     width: calc(100% - (2*$_padding));
     padding: $_padding;
