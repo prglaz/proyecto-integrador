@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina es una tienda de X cosas"> <!--completar-->
+    <meta name="keywords" content="tienda, proyecto, proyecto integrador"> <!--completar entre 15 y 30 palabras-->
+    <meta name="author" content="Pablo Glaz">
+
+    <title>Mi tienda</title>
+
+    <link rel="shortcut icon" href="./images/XXXXX" type="image/x-icon"> <!--completar. ES EL ICONO DE LA BARRA-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="home">
+    <header class="header">
+        <img class="header__logo" src="./images/XXXXX" alt="logo">
+        <h1 class="header__title">Mi tienda</h1>
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Home</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item navbar__item--active" href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h4 class="slider__title">Primer Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img01.jpg" alt="XXXX">
+                </div>
+                <div class="slider__two">
+                    <h4 class="slider__title">Segundo Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img02.jpg" alt="XXXX">
+                </div>
+                <div class="slider__three">
+                    <h4 class="slider__title">Tercer Slide</h4>
+                    <img class="slider__image" src="./images/gallery/img03.jpg" alt="XXXX">
+                </div>
+            </div>
+        </section>
+        <section class="section section--products">
+            <h3>Galería de Productos</h3>
+            <div> formulario de búsqueda y link para crear nuevo producto </div>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img01.jpg" alt="COMPLETAR CON BREVE DESCRIPCION DE LA FOTO">
+                <h4 class="card__title">Nombre del primer producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laborum minima
+                    eveniet debitis
+                    corporis voluptatibus consectetur quasi, numquam, reiciendis omnis dolorem blanditiis est, illo
+                    libero? Unde delectus fuga molestiae deserunt!</p>
+                <div>
+                    <span class="card__price">5500,22</span> <!-- es el precio -->
+                    <button class="button button--sm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--remove">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img02.jpg" alt="COMPLETAR CON BREVE DESCRIPCION DE LA FOTO">
+                <h4 class="card__title">Nombre del segundo producto</h4>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laborum minima
+                    eveniet debitis
+                    corporis voluptatibus consectetur quasi, numquam, reiciendis omnis dolorem blanditiis est, illo
+                    libero? Unde delectus fuga molestiae deserunt!</p>
+                <div>
+                    <span class="card__price">7500,45</span> <!-- es el precio -->
+                    <button class="button button--sm button--add">Agregar</button>
+                    <span class="card__counter">0</span>
+                    <button class="button button--sm button--remove">Quitar</button>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>&copy;2023 Todos los derechos reservados</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

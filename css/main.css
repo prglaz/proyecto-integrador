@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,19 @@ a:visited,
 a:link {
   color: black;
   text-decoration: none;
+}
+
+fieldset {
+  padding: 5px;
+  width: max-content;
+}
+
+h3 {
+  font-family: Agbalumo, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-family: "Chakra Petch", "Times New Roman", Times, serif;
 }
 
 .button {
@@ -129,9 +144,10 @@ a:link {
 .card {
   background-color: beige;
   padding: 1vw;
+  width: 100%;
 }
 .card__image {
-  width: 25%;
+  width: 100%;
 }
 .card__title {
   color: green;
@@ -153,13 +169,40 @@ body {
 
 .footer {
   grid-area: footer;
+  background-color: rgb(112, 104, 104);
+  border: 8px outset lightgray;
+}
+.footer span {
+  display: block;
+  color: white;
+  margin: 2vh;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: 700;
 }
 
 .header {
   grid-area: header;
+  background-color: rgb(112, 104, 104);
+  border: 8px outset lightgray;
+}
+.header__logoTitle {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  justify-items: center;
+  gap: 1vw;
+}
+.header__logoTitle h1 {
+  font-size: 2.4em;
+}
+.header img {
+  width: 50px;
 }
 .header h1 {
-  color: red;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
 }
 
 .main {
@@ -176,7 +219,46 @@ body {
   flex-direction: column;
   gap: 1vw;
 }
+.main .section--products h3 {
+  font-size: 2em;
+}
+.main .section--products .product--actions {
+  margin-top: 2vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.main .section--products .product--actions .product--search fieldset {
+  border-width: 5px;
+}
+.main .section--products .section__products_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+}
+.main .section--products h3 {
+  text-align: center;
+}
+.main .section a {
+  border: 5px dashed rgb(170, 146, 146);
+  font-weight: bold;
+  padding: 2px;
+}
+.main .section a:hover {
+  text-shadow: 2px 2px 2px black;
+}
 
 .navbar {
   grid-area: navbar;
+  border-top: 8px solid lightgray;
+}
+.navbar .navbar__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin: 2vh 2vw;
+  font-weight: 700;
+}
+.navbar .navbar__menu .navbar__item {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

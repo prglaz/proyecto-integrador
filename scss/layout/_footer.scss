@@ -3,4 +3,16 @@
 
 .footer {
     grid-area: footer;
+    background-color: rgb(112, 104, 104);
+    border: 8px outset lightgray;
+
+    span {
+        display: block;
+        color: white;
+        margin: 2vh;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-weight: 700;
+    }
 }

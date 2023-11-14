@@ -15,6 +15,45 @@
             display: flex;
             flex-direction: column;
             gap: 1vw;
+
+            h3 {
+                font-size: 2em;
+            }
+
+            .product--actions {
+                margin-top: 2vh;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                
+                .product--search fieldset {
+                    border-width: 5px;
+                }
+            }
+
+            .section__products_cards {
+                display: grid;
+                // flex-direction: row;
+                // flex-wrap:wrap;
+                // justify-content: center;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1vw;
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        a {
+            // background-color: rgb(113, 113, 59);
+            border: 5px dashed rgb(170, 146, 146);
+            font-weight: bold;
+            padding: 2px;
+        }
+
+        a:hover {
+            text-shadow: 2px 2px 2px black;
         }
     }
 }

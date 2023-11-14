@@ -3,4 +3,18 @@
 
 .navbar {
     grid-area: navbar;
+    border-top: 8px solid lightgray;
+
+
+    .navbar__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        margin: 2vh 2vw;
+        font-weight: 700;
+        
+        .navbar__item {
+            color: white;
+        }
+    }
 }
