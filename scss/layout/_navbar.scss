@@ -6,15 +6,19 @@
     border-top: 8px solid lightgray;
 
 
-    .navbar__menu {
+    &__menu {
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: row;
         gap: 2vw;
         margin: 2vh 2vw;
         font-weight: 700;
-        
-        .navbar__item {
-            color: white;
-        }
+        list-style: none;
     }
+
+    .navbar__item {
+        color: white;
+    }
+
 }

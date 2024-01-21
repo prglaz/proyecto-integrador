@@ -5,8 +5,9 @@ $_width: 100%;
 
 .slider {
     position: relative;
-    height: 25vh;
-    width: calc($_width * 3);
+    // height: 45vh;
+    width: calc($_width * 2);
+    // width: 80%;
     display: flex;
 
     animation-name: move-slide;
@@ -30,6 +31,7 @@ $_width: 100%;
 
     &__image {
         width: $_width;
+        // width: 100%;
         object-fit: cover;
         object-position: center;
         // border-radius: 5vh;
@@ -40,12 +42,8 @@ $_width: 100%;
             left: 0;
         }
 
-        20% {
-            left: 0;
-        }
-
         25% {
-            left: -100%;
+            left: 0;
         }
 
         45% {
@@ -53,11 +51,7 @@ $_width: 100%;
         }
 
         50% {
-            left: -200%;
-        }
-
-        70% {
-            left: -200%;
+            left: -100%;
         }
 
         75% {
@@ -65,7 +59,7 @@ $_width: 100%;
         }
 
         95% {
-            left: -100%;
+            left: 0;
         }
 
         100% {

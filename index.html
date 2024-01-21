@@ -19,9 +19,9 @@
         <div class="header__logoTitle">
             <img class="header__logo" src="./images/logo1.jpg" alt="logo">
             <h1 class="header__title">MULTIMERCADO</h1>
-            <img class="header__compras" src="./images/carro_de_compras1.jpg" alt="logo">
+            <a href="#"><img class="header__compras" src="./images/carro_de_compras1.svg" alt="logo"></a>
         </div>
-        
+
         <nav class="navbar">
             <ul class="navbar__menu">
                 <li><a class="navbar__item navbar__item--active" href="./index.html">Home</a></li>
@@ -35,28 +35,22 @@
         <section class="section section--slider">
             <div class="slider">
                 <div class="slider__one">
-                    <!-- <h4 class="slider__title">Primer Slide</h4> -->
-                    <img class="slider__image" src="./images/gallery/img01.jpg" alt="primera promocion">
+                    <img class="slider__image" src="./images/gallery/descuentos1.jpg" alt="primera promocion">
                 </div>
                 <div class="slider__two">
-                    <!-- <h4 class="slider__title">Segundo Slide</h4> -->
-                    <img class="slider__image" src="./images/gallery/img02.jpg" alt="segunda promocion">
-                </div>
-                <!-- <div class="slider__three">
-                    <!-- <h4 class="slider__title">Tercer Slide</h4> -->
-                    <img class="slider__image" src="./images/gallery/img03.jpg" alt="tercera promocion">
+                    <img class="slider__image" src="./images/gallery/descuentos2.jpg" alt="segunda promocion">
                 </div>
             </div>
         </section>
         <section class="section section--products">
             <div class="product--actions">
                 <div class="product--search">
-                    <form action="">
+                    <form>
                         <fieldset>
                             <legend>Buscar Producto</legend>
                             <label for="search_productName">Nombre</label>
-                            <input type="text" name="" id="search_productName">
-                            <button>Buscar...</button>
+                            <input type="text" id="search_productName">
+                            <button id="product--search__btn">Buscar...</button>
                         </fieldset>
                     </form>
                 </div>
@@ -64,149 +58,8 @@
                     <a href="./product.html">CREAR NUEVO PRODUCTO</a>
                 </div>
             </div>
-            <h3>Nuestros productos</h3>
+            <h2>Nuestros productos</h2>
             <div class="section__products_cards">
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/A14.png"
-                        alt="Samsung Galaxy A14">
-                    <h4 class="card__title">Samsung Galaxy A14</h4>
-                    <p class="card__text">Galaxy A14 combina un procesador Octa-core y conectividad para ofrecerte el rendimiento y la velocidad que necesitás.
-                    Disfrutá del juego y el streaming más fluido y descargá y compartí tus vídeos en un abrir y cerrar de ojos.</p>
-                    <div>
-                        <span class="card__price">139900</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/S23FE.jpg"
-                        alt="Samsung Galaxy S23">
-                    <h4 class="card__title">Samsung Galaxy S23 FE</h4>
-                    <p class="card__text">El celular Samsung Galaxy S23 FE posee un moderno y atractivo diseño que querrás tener en tus manos. El nuevo Galaxy S23
-                    FE se destaca por el diseño icónico de la serie Galaxy S23, que adopta una estética clásica y muchas de las
-                    características prácticas. Está equipado épicamente para todas tus necesidades.</p>
-                    <div>
-                        <span class="card__price">799999</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/M5-32.jpg"
-                        alt="Samsung Smart M5 32">
-                    <h4 class="card__title">Samsung Smart Monitor M5 32"</h4>
-                    <p class="card__text">Un monitor que se adapta a todas sus necesidades. Trabaje sin necesidad de un pc en casa, manténgase conectado con
-                    Microsoft Office 365 y acceda remotamente al ordenador de su oficina. Disfrute del sistema de entretenimiento integrado
-                    del monitor, que, además, encajará perfectamente allá donde quiera colocarlo.</p>
-                    <div>
-                        <span class="card__price">206000</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/MOTOG72.png"
-                        alt="Moto G72">
-                    <h4 class="card__title">Motorola Moto G72</h4>
-                    <p class="card__text">Fotos detalladas con más de un millón de píxeles. Pantalla de nivel cinematográfico con más de mil millones 
-                        de colores. El procesador MediaTek Helio G99 te ofrece toda la potencia que necesitás. Cargá tu teléfono a toda velocidad con 
-                        TurboPower™ de 30 W.</p>
-                    <div>
-                        <span class="card__price">209999</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/MOTOG32.png"
-                        alt="Moto G32">
-                    <h4 class="card__title">Motorola Moto G32</h4>
-                    <p class="card__text">Amplificá tu entretenimiento con dos parlantes estéreo y el sonido Dolby Atmos®. Con TurboPower™ 30, podés cargar el teléfono a 
-                        gran velocidad*. Con el procesador Octa-Core Snapdragon®* 680 y los 6 GB de RAM, vas a disfrutar de tu contenido favorito con un desempeño optimizado. 
-                        El sensor de 50 MP permite sacar fotos nítidas con cualquier luz.</p>
-                    <div>
-                        <span class="card__price">159999</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/AS-4228.png"
-                        alt="Aspiradora AS-4228">
-                    <h4 class="card__title">Aspiradora Ultracomb AS-4228</h4>
-                    <p class="card__text">Aspiradora Sin Bolsa Ultracomb AS/4228, cuenta con una potencia de 2000W y una capacidad de 3,5 litros, lo que la hace
-                    ideal para limpiar cualquier tipo de superficie con rapidez y eficacia, incorpora un nuevo sistema de filtración
-                    múltiple que utiliza tecnología multi/ciclónica para separar el polvo, logrando así una limpieza más profunda y
-                    duradera.</p>
-                    <div>
-                        <span class="card__price">120500</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/53HVG.jpg"
-                        alt="Carrier 53HVG">
-                    <h4 class="card__title">Carrier Xpower Inverter Smart 53hvg</h4>
-                    <p class="card__text">Con un nuevo diseño más eficiente y duradero, los equipos XPower Inverter Smart cuentan con tecnología innovadora que te
-                    permite llevar tu experiencia de confort a otro nivel. Mediante la App Carrier Air Conditioner podés controlar tu equipo
-                    de manera remota desde tu smartphone o tablet.</p>
-                    <div>
-                        <span class="card__price">599999</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/php32.jpg"
-                        alt="Aire Acondicionado PHP32HA3API">
-                    <h4 class="card__title">Aire Acondicionado Portátil Frío/Calor 3500W Philco</h4>
-                    <p class="card__text">El Aire Acondicionado Portátil Frío Calor de Philco te asegura la mejor climatización en cualquier momento del año.
-                    Cuenta con filtros lavables, no requiere drenaje, el agua se autoevapora y es fácil de instalar.
-                    Es compacto y de fácil traslado, ideal para espacios reducidos en donde la ventilación no es óptima.</p>
-                    <div>
-                        <span class="card__price">159999</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/TenderSinAlas.jpg"
-                        alt="Tender Plegable Sin Alas">
-                    <h4 class="card__title">Tender Plegable Slim Sin Alas Mor</h4>
-                    <p class="card__text">El tendedero de piso delgado de Mor es la forma más económica y ecológica de secar la ropa. Práctico y funcional, es
-                    perfecto para aquellos que no tienen mucho espacio en casa o apartamento.
-                    Se puede llevar fácilmente a donde prefiera y cuando no lo esté usando, simplemente dóblelo y guárdelo en cualquier
-                    rincón.</p>
-                    <div>
-                        <span class="card__price">19840</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
-                <figure class="card card--product">
-                    <img class="card__image" src="./images/gallery/TenderConAlas.jpg"
-                        alt="Tender Plegable Con Alas">
-                    <h4 class="card__title">Tender Plegable Con Alas Mor</h4>
-                    <p class="card__text">El Tendedero de Piso con Solapas ofrece resistencia y durabilidad y sus exclusivas piezas plásticas de colores son un
-                    diferencial que, además de aportar más encanto, ayudan a proteger contra la corrosión. El Tendedero de Piso con Slim Flaps optimiza tu espacio distribuyendo seis
-                    varillas resistentes en el centro y dos solapas con cuatro varillas</p>
-                    <div>
-                        <span class="card__price">34950</span>
-                        <button class="button button--sm button--add">Agregar</button>
-                        <span class="card__counter">0</span>
-                        <button class="button button--sm button--remove button--disabled">Quitar</button>
-                    </div>
-                </figure>
             </div>
         </section>
     </main>
@@ -215,7 +68,7 @@
         <span>&copy;2023 Todos los derechos reservados</span>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

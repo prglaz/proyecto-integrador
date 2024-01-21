@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina es una tienda online tipo supermercado">
+    <meta name="keywords" content="tienda, proyecto, proyecto integrador, html, css, javascript, scss">
+    <meta name="author" content="Pablo Glaz">
+
+    <title>Multimercado - Nuevo producto</title>
+
+    <link rel="shortcut icon" href="./images/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="contact">
+    <header class="header">
+        <div class="header__logoTitle">
+            <img class="header__logo" src="./images/logo1.jpg" alt="logo">
+            <h1 class="header__title">Nuevo producto</h1>
+            <a href="#"><img class="header__compras" src="./images/carro_de_compras1.svg" alt="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item navbar__item--active" href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="new_product__form">
+            <h2>Datos del nuevo producto</h2>
+            <form class="form">
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-name">Nombre</label>
+                    <input class="new_product__form__input__validate" type="text" id="id-name" name="name" minlength="3"
+                        maxlength="60" required>
+                    <span class="new_product__form__input__error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-price">Precio</label>
+                    <input class="new_product__form__input__validate" type="number" id="id-price" name="price" required>
+                    <span class="new_product__form__input-error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-stock">Stock</label>
+                    <input class="new_product__form__input__validate" type="number" id="id-stock" name="stock" required>
+                    <span class="new_product__form__input__error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-brand">Marca</label>
+                    <input class="new_product__form__input__validate" type="text" id="id-brand" name="brand"
+                        minlength="3" maxlength="40" required>
+                    <span class="new_product__form__input-error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-category">Categoría</label>
+                    <input class="new_product__form__input__validate" type="text" id="id-category" name="category"
+                        minlength="3" maxlength="40" required>
+                    <span class="new_product__form__input__error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-short-desc">Descrición corta</label>
+                    <textarea class="new_product__form__input__validate" id="id-short-desc" name="short-desc" rows="5"
+                        minlength="5" maxlength="300" required></textarea>
+                    <span class="input__error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-long-desc">Descrición larga</label>
+                    <textarea class="new_product__form__input__validate" id="id-long-desc" name="long-desc" rows="10"
+                        minlength="10" maxlength="600" required></textarea>
+                    <span class="input__error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-product-procedence">Procedencia del
+                        producto</label>
+                    <select name="product-procedence" id="id-product-procedence">
+                        <option value="NACIONAL">NACIONAL</option>
+                        <option value="IMPORTADO">IMPORTADO</option>
+                    </select>
+                    <span class="new_product__form__input-error"></span>
+                </div>
+                <div class="new_product__form__input">
+                    <label class="new_product__form__input__label" for="id-free-ship">Envío incluido</label>
+                    <select name="free-ship" id="id-free-ship">
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option>
+                    </select>
+                    <span class="new_product__form__input-error"></span>
+                </div>
+
+                <div>
+                    <label class="new_product__form__input__label" for="id-photo">Fotografía</label>
+                    <input class="new_product__form__input__validate" type="file" name="photo" id="id-photo">
+                    <span class="new_product__form__input-error"></span>
+                </div>
+
+                <div class="new_product__form__input">
+                    <input type="button" id="id-add-product" value="Agregar producto" disabled>
+                </div>
+            </form>
+
+            <div class="new_product__form__alert">
+                <p class="new_product__form__alert__text"></p>
+                <span class="new_product__form__alert__close material-symbols-outlined">close</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>&copy;2023 Todos los derechos reservados</span>
+    </footer>
+
+    <script type="module" src="./js/product.js"></script>
+</body>
+
+</html>
