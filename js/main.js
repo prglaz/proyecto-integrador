@@ -115,7 +115,6 @@ function loadProducts() {
     cardProducts = document.querySelectorAll(".card--product");
 }
 
-console.log(location.pathname);
 if (location.pathname.endsWith("index.html") || location.pathname.endsWith("/")) {
     window.onload = loadProducts;
 }
