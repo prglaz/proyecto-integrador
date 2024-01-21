@@ -115,7 +115,7 @@ function loadProducts() {
     cardProducts = document.querySelectorAll(".card--product");
 }
 
-
+console.log(location.pathname);
 if (location.pathname.endsWith("index.html") || location.pathname.endsWith("/proyecto-integrador/")) {
     window.onload = loadProducts;
 }

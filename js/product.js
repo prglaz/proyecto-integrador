@@ -145,8 +145,6 @@ selectFreeShip.onblur = validateFreeShip;
 
 
 function setStatusButton() {
-    console.log(nameValid, priceValid, stockValid, brandValid, categoryValid, shortDescValid, longDescValid, productProcedenceValid, freeShipValid);
-    console.log(nameValid && priceValid && stockValid && brandValid && categoryValid && shortDescValid && longDescValid && productProcedenceValid && freeShipValid);
     if (nameValid && priceValid && stockValid && brandValid && categoryValid && shortDescValid && longDescValid && productProcedenceValid && freeShipValid) {
         buttonAddProduct.disabled = false;
     }
