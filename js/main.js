@@ -116,7 +116,7 @@ function loadProducts() {
 }
 
 console.log(location.pathname);
-if (location.pathname.endsWith("index.html") || location.pathname.endsWith("/proyecto-integrador/")) {
+if (location.pathname.endsWith("index.html") || location.pathname.endsWith("/")) {
     window.onload = loadProducts;
 }
 
